@@ -7,4 +7,6 @@
     <string name="ayuda">Ayuda</string>
     <string name="ajustes">Ajustes</string>
     <string name="title_activity_info_basica">InfoBasica</string>
+    <string name="open_a">Open</string>
+    <string name="close_a">Close</string>
 </resources>
