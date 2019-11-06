@@ -22,8 +22,8 @@ public class VistaInicial extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
-    private DrawerLayout drawerLayout;
-    private ActionBarDrawerToggle newToggle;
+    //private DrawerLayout drawerLayout;
+    //private ActionBarDrawerToggle newToggle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,7 @@ public class VistaInicial extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.myToolbar);
         tabLayout= (TabLayout) findViewById(R.id.tablayout);
         viewPager = (ViewPager) findViewById(R.id.myViewPager);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        //drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
 
 
 
