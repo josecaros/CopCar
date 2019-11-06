@@ -10,6 +10,8 @@
     android:paddingTop="150dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
+    android:background="@drawable/fondo"
+    android:scaleType="centerCrop"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -36,36 +38,43 @@
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
             android:imeOptions="actionDone"
+            android:background="@color/white"
             android:inputType="text"
+            android:textAlignment="center"
             android:hint="Número de Placa"
             android:selectAllOnFocus="true" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="match_parent">
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
 
         <Button
+
             android:id="@+id/login"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="6dp"
             android:enabled="true"
-            android:text="Iniciar Sesion" />
+            android:text="Iniciar Sesion"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#57BBE9" />
 
-        <Button
-            android:id="@+id/botonTemporal"
-            android:layout_width="142dp"
-            android:layout_height="wrap_content"
-
-            android:enabled="false"
-            android:text="Abrir Otro Activity" />
 
     </LinearLayout>
+    <Button
+        android:id="@+id/botonTemporal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Dejame Este Boton" />
 
 </LinearLayout>
