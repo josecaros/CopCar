@@ -8,17 +8,28 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button temporal;
+    Button temporal, temporal2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         temporal = (Button) findViewById(R.id.botonTemporal);
+        temporal2 = (Button) findViewById(R.id.login);
+
         temporal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, VistaInicial.class);
                 startActivityForResult(intent,0);
+            }
+        });
+
+        temporal2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), VistaInicial.class);
+                startActivityForResult(intent, 0);
             }
         });
     }
