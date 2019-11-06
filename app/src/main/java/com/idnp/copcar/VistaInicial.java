@@ -1,11 +1,14 @@
 package com.idnp.copcar;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.tabs.TabLayout;
 import com.idnp.copcar.fragments.Chat;
@@ -31,6 +34,17 @@ public class VistaInicial extends AppCompatActivity {
         Log.i("tab","tablayout");
         tabLayout.setupWithViewPager(viewPager);
         Log.i("tab","finMetodo");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
     }
 
     private void setupViewPager(ViewPager viewPager){
