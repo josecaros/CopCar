@@ -4,15 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".VistaInicial">
 
 
+    <item
+        android:id="@+id/ajustes"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="never"
+        android:title="@string/ajustes"/>
+
 
     <item
-        android:id="@+id/agregar" android:icon="@android:drawable/ic_dialog_info" app:showAsAction="never" android:title="@string/agregar">
-    </item>
+        android:id="@+id/agregar"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="never"
+        android:title="@string/agregar"/>
+
+
     <item
-        android:id="@+id/ajustes"  app:showAsAction="never" android:title="@string/ajustes">
-    </item>
-    <item
-        android:id="@+id/ayuda"  app:showAsAction="never" android:title="@string/ayuda">
-    </item>
+        android:id="@+id/ayuda"
+        app:showAsAction="never"
+        android:title="@string/ayuda"/>
+
 
 </menu>
