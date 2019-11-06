@@ -57,13 +57,12 @@
 
             android:enabled="true"
             android:text="Iniciar Sesion" />
-
-        <Button
-            android:id="@+id/botonTemporal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Dejame Este Boton" />
     </LinearLayout>
+    <Button
+        android:id="@+id/botonTemporal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Dejame Este Boton" />
 
 </LinearLayout>
