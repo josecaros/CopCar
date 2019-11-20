@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/name" android:icon="@android:drawable/ic_menu_sort_by_size" android:title="Nombre" />
-    <item android:id="@+id/surname" android:title="Apellido" android:icon="@android:drawable/ic_menu_sort_by_size" />
-    <item android:id="@+id/id" android:title="Placa" android:icon="@android:drawable/ic_menu_sort_by_size"/>
+    <item android:id="@+id/info_name" android:icon="@mipmap/ic_action_user"
+        android:title="Nombre" />
+
+    <item
+        android:id="@+id/info_surname"
+        android:icon="@mipmap/ic_action_user"
+        android:title="Apellido"/>
+
+    <item android:id="@+id/info_id" android:title="Placa"
+        android:icon="@mipmap/ic_action_paste"/>
 </menu>

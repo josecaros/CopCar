@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 
 import com.google.android.material.tabs.TabLayout;
 import com.idnp.copcar.fragments.Chat;
@@ -53,13 +54,19 @@ public class VistaInicial extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
-    /*
+
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (newToggle.onOptionsItemSelected(item))
-            return true;
-        return super.onOptionsItemSelected(item);
-    }*/
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        if(item.getItemId()==R.id.ajustes_main_menu){
+
+
+        }else if(item.getItemId() == R.id.agregar_main_menu){
+
+        }
+
+        return super.onContextItemSelected(item);
+    }
 
     private void setupViewPager(ViewPager viewPager){
         Log.i("tab","metodo");
