@@ -6,15 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button temporal, temporal2;
+    TextView temporal;
+    Button temporal2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        temporal = (Button) findViewById(R.id.login3);
+        temporal = (TextView) findViewById(R.id.link_to_register);
         temporal2 = (Button) findViewById(R.id.login);
 
         temporal.setOnClickListener(new View.OnClickListener() {
