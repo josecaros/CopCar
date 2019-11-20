@@ -22,7 +22,7 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="#15aeb2"
                 app:layout_scrollFlags="scroll|enterAlways"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tablayout"
