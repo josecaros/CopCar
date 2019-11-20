@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".VistaRegistro"
+            android:label="@string/title_activity_vista_registro"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".InfoBasica"
             android:label="@string/title_activity_info_basica"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".VistaInicial" />
         <activity android:name=".MainActivity">
             <intent-filter>
