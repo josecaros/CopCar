@@ -3,10 +3,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="160dp"
+    android:background="@drawable/imagenav"
     android:padding="20dp">
     <ImageView
         android:src="@drawable/usericon"
         android:layout_width="75dp"
-        android:layout_height="75dp"></ImageView>
+        android:layout_height="75dp"/>
 
 </LinearLayout>
