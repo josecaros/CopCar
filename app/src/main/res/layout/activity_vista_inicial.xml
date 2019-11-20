@@ -43,6 +43,7 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header_navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -50,10 +51,7 @@
 
         app:itemIconTint="@color/darkgray"
         app:itemTextColor="@color/darkgray"
-        app:menu="@menu/drawermenu"
-        app:headerLayout="@layout/header_navigation"
-
-        >
+        app:menu="@menu/drawermenu">
 
     </com.google.android.material.navigation.NavigationView>
 
