@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -16,6 +17,7 @@ import android.widget.AdapterView;
 import com.google.android.material.tabs.TabLayout;
 import com.idnp.copcar.fragments.Chat;
 import com.idnp.copcar.fragments.GroupChat;
+import com.idnp.copcar.resources.AjustesUsuario;
 import com.idnp.copcar.resources.ViewPagerAdapter;
 
 public class VistaInicial extends AppCompatActivity {
@@ -59,8 +61,9 @@ public class VistaInicial extends AppCompatActivity {
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         if(item.getItemId()==R.id.ajustes_main_menu){
-
-
+            Intent intent = new Intent(VistaInicial.this , AjustesUsuario.class);
+            startActivityForResult(intent, 2);// Activity is started with requestCode 2
+            Log.i("MainActivity", "Abriendo otro activity");
         }else if(item.getItemId() == R.id.agregar_main_menu){
 
         }

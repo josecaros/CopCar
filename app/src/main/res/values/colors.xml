@@ -8,4 +8,6 @@
     <color name="darkgray">#6c6c6c</color>
     <color name="transparent">#00000000</color>
     <color name="Transparent80">#80000000</color>
+    <color name="main_top">#15aeb2</color>
+    <color name="main_bot">#2cb3b7</color>
 </resources>
