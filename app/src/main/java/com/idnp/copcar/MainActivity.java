@@ -14,16 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        temporal = (Button) findViewById(R.id.botonTemporal);
         temporal2 = (Button) findViewById(R.id.login);
-
-        temporal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, VistaInicial.class);
-                startActivityForResult(intent,0);
-            }
-        });
 
         temporal2.setOnClickListener(new View.OnClickListener() {
             @Override
