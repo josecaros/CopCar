@@ -85,35 +85,21 @@
 
         <TextView
             android:id="@+id/link_to_register"
-            android:layout_width="162dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dip"
-            android:layout_marginBottom="40dip"
-            android:gravity="center"
-            android:text="Registrarse"
-            android:textStyle="bold"
-            android:textColor="#FF9800"
-            android:textSize="20dip"
-
-            android:shadowColor="@color/black"
-            android:shadowDx="1.2"
-            android:shadowDy="1.2"
-            android:shadowRadius="1.5" />
-
-        <TextView android:id="@+id/link_to_forgotpw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
             android:layout_marginBottom="40dip"
-            android:text="Olvidaste tu Contraseña?"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="20dip"
-            android:textColor="#FF9800"
             android:shadowColor="@color/black"
             android:shadowDx="1.2"
             android:shadowDy="1.2"
-            android:shadowRadius="1.5" />
+            android:shadowRadius="1.5"
+
+            android:text="Registrarse"
+            android:textColor="#FF9800"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 

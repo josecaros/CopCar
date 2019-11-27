@@ -22,6 +22,10 @@
         android:id="@+id/ayuda_main_menu"
         app:showAsAction="never"
         android:title="@string/ayuda"/>
+    <item
+        android:id="@+id/cerrar_main_menu"
+        app:showAsAction="never"
+        android:title="@string/close_a"/>
 
 
 </menu>

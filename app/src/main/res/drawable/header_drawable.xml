@@ -2,7 +2,7 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="100dp"
     android:height="100dp"
-    android:viewportHeight="100"
+    android:viewportHeight="40"
     android:viewportWidth="100">
     <path
         android:name="firstheader"
@@ -20,10 +20,6 @@
         android:name="thirdheader"
         android:fillColor="#1fdee4"
         android:pathData="M 0,40 L 100,40 100,0 0,40 z" />
-    <path
-        android:name="thirdheader"
-        android:fillColor="#40999c"
-        android:pathData="M 0,40 L 100,40 100,0 100,100 0,100 z" />
 
 
 

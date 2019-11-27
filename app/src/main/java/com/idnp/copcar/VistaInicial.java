@@ -58,14 +58,15 @@ public class VistaInicial extends AppCompatActivity {
     }
 
     @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         if(item.getItemId()==R.id.ajustes_main_menu){
-            Intent intent = new Intent(VistaInicial.this , AjustesUsuario.class);
+            Intent intent = new Intent(this , AjustesUsuario.class);
             startActivityForResult(intent, 2);// Activity is started with requestCode 2
             Log.i("MainActivity", "Abriendo otro activity");
         }else if(item.getItemId() == R.id.agregar_main_menu){
-
+            Intent intent= new Intent(this, BuscarUsuario.class);
+            startActivityForResult(intent,2);
         }
 
         return super.onContextItemSelected(item);
